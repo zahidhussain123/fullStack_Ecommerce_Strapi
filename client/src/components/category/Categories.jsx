@@ -2,7 +2,7 @@ import React from 'react'
 import "./categories.scss"
 import { Link } from 'react-router-dom';
 
-const Products = () => {
+const Categories = () => {
   return (
     <div className="categories">
       <div className="col">
@@ -12,7 +12,7 @@ const Products = () => {
             alt=""
           />
           <button>
-            <Link className="link" to="/products/1">
+            <Link className="link" to="/products/9">
               Sale
             </Link>
           </button>
@@ -23,7 +23,7 @@ const Products = () => {
             alt=""
           />
           <button>
-            <Link to="/products/1" className="link">
+            <Link to="/products/4" className="link">
               Women
             </Link>
           </button>
@@ -37,7 +37,7 @@ const Products = () => {
             alt=""
           />
           <button>
-            <Link to="/products/1" className="link">
+            <Link to="/products/5" className="link">
               New Season
             </Link>
           </button>
@@ -52,7 +52,7 @@ const Products = () => {
                 alt=""
               />
               <button>
-                <Link to="/products/1" className="link">
+                <Link to="/products/3" className="link">
                   Men
                 </Link>
               </button>
@@ -66,7 +66,7 @@ const Products = () => {
                 alt=""
               />
               <button>
-                <Link to="/products/1" className="link">
+                <Link to="/products/6" className="link">
                   Accessories
                 </Link>
               </button>
@@ -79,7 +79,7 @@ const Products = () => {
             alt=""
           />
           <button>
-            <Link to="/products/1" className="link">
+            <Link to="/products/7" className="link">
               Shoes
             </Link>
           </button>
@@ -89,4 +89,4 @@ const Products = () => {
   );
 }
 
-export default Products
+export default Categories

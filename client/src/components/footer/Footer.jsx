@@ -2,6 +2,7 @@ import React from 'react'
 import "./footer.scss"
 
 const Footer = () => {
+  const full_year = new Date().getFullYear()
   return (
     <div className='footer'>
       <div className="top">
@@ -44,7 +45,7 @@ const Footer = () => {
         <div className="left">
           <span className='logo'>ZaidStore</span>
           <span className="copyright">
-            © Copyright 2023. All Rights Reserved
+            © Copyright {full_year}. All Rights Reserved
           </span>
         </div>
         <div className="right">

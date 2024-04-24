@@ -3,11 +3,10 @@ import "./card.scss";
 import { Link } from "react-router-dom";
 
 const Card = ({ item }) => {
-    console.log(item);
     return (
-        <Link className="link">
+        <Link className="link" to={`/product/${item.id}`}>
             <div className="card">
-                {/* <div className="image">
+                <div className="image">
                     {item?.attributes.isNew && <span>New Season</span>}
                     <img
                         src={
@@ -28,7 +27,7 @@ const Card = ({ item }) => {
                 <div className="prices">
                     <h3>${item.oldPrice || item?.attributes.price + 20}</h3>
                     <h3>${item?.attributes.price}</h3>
-                </div> */}
+                </div>
             </div>
         </Link>
     );
